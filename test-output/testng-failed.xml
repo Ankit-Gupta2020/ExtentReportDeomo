@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="base.ExtentTestNGITestListener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.extentreport.Demo3">
+        <methods>
+          <include name="Method1Demo3"/>
+          <include name="Method3Demo3"/>
+        </methods>
+      </class> <!-- com.extentreport.Demo3 -->
+      <class name="com.extentreport.Demo2">
+        <methods>
+          <include name="testFailed"/>
+          <include name="testSkipped"/>
+          <include name="beforeSuit"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.extentreport.Demo2 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
